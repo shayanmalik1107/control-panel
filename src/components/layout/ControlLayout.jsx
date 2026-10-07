@@ -20,14 +20,9 @@ export default function ControlLayout({ activeTab, setActiveTab, children }) {
       <aside className="sidebar">
         <div>
           {/* Brand Header */}
-          <div className="brand">
-            <div className="brand-icon">
-              <ShieldCheck size={24} />
-            </div>
-            <div>
-              <div className="brand-text">Control Panel</div>
-              <div className="brand-sub">Real-time Master</div>
-            </div>
+          <div className="brand" style={{ padding: '16px 14px', borderBottom: '1px solid var(--border-color)' }}>
+            <img src="/lamba.png" alt="LAMBA" className="lamba-logo-desktop" style={{ height: '42px', maxWidth: '190px', objectFit: 'contain' }} />
+            <img src="/lambalogo.png" alt="LAMBA" className="lamba-logo-mobile" style={{ height: '36px', maxWidth: '36px', objectFit: 'contain' }} />
           </div>
 
           {/* Navigation Category: Core Controls */}

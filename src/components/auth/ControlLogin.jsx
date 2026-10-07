@@ -49,27 +49,11 @@ export default function ControlLogin() {
           padding: 44,
           boxShadow: '0 30px 70px rgba(0, 0, 0, 0.7), 0 0 40px rgba(99, 102, 241, 0.18)',
         }}>
-          <div style={{ textAlign: 'center', marginBottom: 36 }}>
-            <div style={{
-              width: 64,
-              height: 64,
-              borderRadius: 'var(--radius-lg)',
-              background: 'linear-gradient(135deg, #6366f1 0%, #4338ca 100%)',
-              display: 'inline-flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              color: '#ffffff',
-              boxShadow: '0 12px 30px -5px rgba(99, 102, 241, 0.6)',
-              marginBottom: 20,
-              border: '1px solid rgba(255, 255, 255, 0.2)',
-            }}>
-              <ShieldCheck size={32} />
-            </div>
-            <h1 style={{ fontSize: 26, fontWeight: 800, color: '#ffffff', margin: '0 0 8px 0', letterSpacing: '-0.6px' }}>
-              System Control Panel
-            </h1>
-            <p style={{ fontSize: 13.5, color: '#94a3b8', margin: 0, fontWeight: 500 }}>
-              Master Security & Account Control Hub
+          <div style={{ textAlign: 'center', marginBottom: 32 }}>
+            <img src="/lamba.png" alt="LAMBA" className="lamba-logo-desktop" style={{ maxHeight: '75px', margin: '0 auto 12px auto', objectFit: 'contain' }} />
+            <img src="/lambalogo.png" alt="LAMBA" className="lamba-logo-mobile" style={{ maxHeight: '60px', margin: '0 auto 12px auto', objectFit: 'contain' }} />
+            <p style={{ fontSize: 13.5, color: '#94a3b8', margin: 0, fontWeight: 600 }}>
+              LAMBA System Control Hub
             </p>
           </div>
 

@@ -644,3 +644,23 @@ input:checked + .toggle-slider:before {
   70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
   100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
 }
+
+/* ============================================================
+   RESPONSIVE LAMBA LOGO SYSTEM
+   ============================================================ */
+.lamba-logo-desktop {
+  display: block;
+}
+.lamba-logo-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .lamba-logo-desktop {
+    display: none !important;
+  }
+  .lamba-logo-mobile {
+    display: block !important;
+  }
+}
+
