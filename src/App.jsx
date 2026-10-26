@@ -4,6 +4,7 @@ import ControlLogin from './components/auth/ControlLogin';
 import ControlLayout from './components/layout/ControlLayout';
 import OverviewTab from './components/dashboard/OverviewTab';
 import PackagesTab from './components/packages/PackagesTab';
+import TrialsTab from './components/trials/TrialsTab';
 import AdminsTab from './components/admins/AdminsTab';
 import EmployeesTab from './components/employees/EmployeesTab';
 import CompaniesTab from './components/companies/CompaniesTab';
@@ -20,6 +21,7 @@ function ControlAppContent() {
     <ControlLayout activeTab={activeTab} setActiveTab={setActiveTab}>
       {activeTab === 'overview' && <OverviewTab setActiveTab={setActiveTab} />}
       {activeTab === 'packages' && <PackagesTab />}
+      {activeTab === 'trials' && <TrialsTab />}
       {activeTab === 'admins' && <AdminsTab />}
       {activeTab === 'employees' && <EmployeesTab />}
       {activeTab === 'companies' && <CompaniesTab />}

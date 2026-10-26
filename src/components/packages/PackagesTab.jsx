@@ -125,6 +125,7 @@ export default function PackagesTab() {
         planId: finalPlan,
         price: isBasic ? 5000 : 10000,
         status: 'active',
+        isTrial: false,
         lastApprovedAt: now,
         extraDaysPassed: extraDays,
       };

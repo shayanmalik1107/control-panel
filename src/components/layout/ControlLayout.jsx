@@ -1,5 +1,5 @@
 import { useControlAuth } from '../../contexts/AuthContext';
-import { ShieldCheck, LayoutDashboard, UserCheck, Users, Building2, LogOut, Radio, CreditCard, Activity, Sparkles } from 'lucide-react';
+import { ShieldCheck, LayoutDashboard, UserCheck, Users, Building2, LogOut, Radio, CreditCard, Activity, Sparkles, Clock, Zap } from 'lucide-react';
 
 export default function ControlLayout({ activeTab, setActiveTab, children }) {
   const { logout } = useControlAuth();
@@ -7,6 +7,7 @@ export default function ControlLayout({ activeTab, setActiveTab, children }) {
   const navItems = [
     { id: 'overview', label: 'System Overview', icon: LayoutDashboard, category: 'Main' },
     { id: 'packages', label: 'Subscriptions & Packages', icon: CreditCard, category: 'Main' },
+    { id: 'trials', label: '3-Day Trial Accounts', icon: Clock, category: 'Main' },
     { id: 'admins', label: 'Admin Accounts', icon: UserCheck, category: 'Management' },
     { id: 'employees', label: 'Employee Accounts', icon: Users, category: 'Management' },
     { id: 'companies', label: 'Admin Companies', icon: Building2, category: 'Management' },
@@ -51,6 +52,17 @@ export default function ControlLayout({ activeTab, setActiveTab, children }) {
                       borderRadius: 99,
                       border: '1px solid rgba(99, 102, 241, 0.4)',
                     }}>PRO</span>
+                  )}
+                  {item.id === 'trials' && (
+                    <span style={{
+                      fontSize: 10,
+                      fontWeight: 800,
+                      background: 'rgba(16, 185, 129, 0.25)',
+                      color: '#34d399',
+                      padding: '2px 7px',
+                      borderRadius: 99,
+                      border: '1px solid rgba(16, 185, 129, 0.4)',
+                    }}>3-DAY</span>
                   )}
                 </div>
               );
